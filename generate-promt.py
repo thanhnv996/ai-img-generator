@@ -3,8 +3,9 @@ import os
 import random
 
 ROOT_DIR = '.'
-URL = 'https://raw.githubusercontent.com/thanhnv996/ai-img-generator/3905ba7330377e1b0b1b87b08114db12ab174ed0'
+URL = 'https://raw.githubusercontent.com/thanhnv996/ai-img-generator/main'
 # GENERATE_CATEGORIES = ['jungle', 'flower', 'bird']
+GENERATE_CATEGORIES = ['Nature _Landscapes', 'Nature _Landscapes']
 # GENERATE_CATEGORIES = ['jungle', 'flower', 'bird', ]
 # GENERATE_CATEGORIES = ['jungle', 'jungle', 'flower', ]
 # GENERATE_CATEGORIES = ['jungle', 'flower', 'jungle', ]
@@ -12,7 +13,7 @@ URL = 'https://raw.githubusercontent.com/thanhnv996/ai-img-generator/3905ba73303
 # GENERATE_CATEGORIES = ['bird', 'nature', ]
 # GENERATE_CATEGORIES = ['bird', 'flower', ]
 # GENERATE_CATEGORIES = ['bird', 'jungle', 'flower', ]
-GENERATE_CATEGORIES = ['bird', 'flower']
+# GENERATE_CATEGORIES = ['bird', 'flower']
 # GENERATE_CATEGORIES = ['jungle', 'flower']
 NUMBER_OUTPUT_COMMAND = 10
 # --chaos accepts values 0–100.
