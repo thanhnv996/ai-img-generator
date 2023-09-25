@@ -3,17 +3,18 @@ import os
 import random
 
 ROOT_DIR = '.'
+URL = 'https://raw.githubusercontent.com/thanhnv996/ai-img-generator/3905ba7330377e1b0b1b87b08114db12ab174ed0'
 # GENERATE_CATEGORIES = ['jungle', 'flower', 'bird']
-GENERATE_CATEGORIES = ['jungle', 'flower', 'bird', ]
+# GENERATE_CATEGORIES = ['jungle', 'flower', 'bird', ]
 # GENERATE_CATEGORIES = ['jungle', 'jungle', 'flower', ]
-# GENERATE_CATEGORIES = ['jungle', 'flower', 'flower', ]
+# GENERATE_CATEGORIES = ['jungle', 'flower', 'jungle', ]
 # GENERATE_CATEGORIES = ['jungle', 'jungle', ]
 # GENERATE_CATEGORIES = ['bird', 'nature', ]
 # GENERATE_CATEGORIES = ['bird', 'flower', ]
 # GENERATE_CATEGORIES = ['bird', 'jungle', 'flower', ]
-# GENERATE_CATEGORIES = ['bird', 'flower']
+GENERATE_CATEGORIES = ['bird', 'flower']
 # GENERATE_CATEGORIES = ['jungle', 'flower']
-NUMBER_OUTPUT_COMMAND = 20
+NUMBER_OUTPUT_COMMAND = 10
 # --chaos accepts values 0–100.
 # The default --chaos value is 0.
 # Sự khác nhau của 4 hình ảnh tạo ra
@@ -34,7 +35,7 @@ for subdir, dirs, files in os.walk(ROOT_DIR):
         if os.path.isfile(file_path) and '.py' not in file_path:
             category = file_path.split("\\")[-2]
             # print(category)
-            link = f'http://18.141.202.80/ai-img/{category}/{file}'
+            link = f'{URL}/{category}/{file}'
             if category not in category_dict:
                 category_dict[category] = []
                 image_links.append(None)
